@@ -366,3 +366,13 @@ else:
 #Any number is True, except 0.
 #Any list, tuple, set, and dictionary are True, except empty ones
 #All of these rules apply to functions as well
+
+#function with if yes or no
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+#
