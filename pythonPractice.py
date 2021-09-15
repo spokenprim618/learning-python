@@ -375,4 +375,158 @@ if myFunction():
   print("YES!")
 else:
   print("NO!")
+#how to make a true or false if a variable is a certeain datatype
+x = 200
+print(isinstance(x, int))
+#asking is X and integer
+#using print I can use math operaters to add, subtract, multiply, divide, modulus, exponents, and floored division
+a=10
+b=20
+print(a + b)
+print(a - b)
+print(a * b)
+print(b / a)
+print(a ** b)
+print(10 // 2)
+print(10.0 // 2.0)
+print(-10.0 // 2.0)
+print(-10 // 2)
+#camparison operaters
+a=10
+b=20
+if (a==b):
+	print("yes it is")
+else:
+	print("no it is not")
+
+a=10
+b=20
+if (a > b): #if (a < b) if (a<=b) if (a>=b)
+	print("yes it is")
+else:
+	print("no it is not")
+
+#python math variables in a varaible
+a=10
+c=20
+c+=a
+c-=a
+c*=a
+c/=a
+#modules
+c%=a
+c**=a
+c//=a
+
+#logical operaters
+#if both are true
+a=10
+b=20
+a=10
+b=20
+#both have to be true
+print(a>5 and b>15)
+
+#if one is false are non zero
+print(a or b)
+   
+#returns false if true and returns true if false
+print(not(a and b))
+print(not(a>15 and a>20))
+
+#returns true if both variables are the same object
+x=10
+y=10
+print(x is y) # true
+print(x is not y) # false
+x=12
+y=13
+print(x is y) #false
+print(x is not y)# true
+
+#lists, tuples, sets, and dictionarys are used to store multiple items
+#list
+myList= ["apple", "banana", "cherry"]
+# list items are ordered in index [0-infinite], allows duplicates, and changeble
+# the order of the numbers will not change
+#new items added through code will be added at the end of the list
+#len() function works on lists
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+#the letters are not counted but each item is counted
+# True and False need to be capitilzed
+#using type will identify only that its a list but not whats inside unless using and index
+#using the list constructor can specifcally identify that its a list
+#negative indexing starts from the end not from 0 but -1
+#I can specify a range of indexes that I want to print
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+#I can not specify a start and it wil start from the begining and I might not specify a end so it will print all of the items
+#negative indexing can be used as well
+#the specified end index will not be included. True for negative indexing as well
+#in can be used to test if a specified item is in a list
+myList = ["apple", "banana", "cherry"]
+if "apple" in myList:
+  print("Yes, 'apple' is in the fruits list")
+#I can change what the index equates to
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+#I can change a range of values using index also possible with negative index
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)
+#if you edit an index with more values
+thislist = ["apple", "banana", "cherry"]
+
+thislist[1:2] = ["blackcurrant", "watermelon"]
+
+print(thislist)
+#['apple', 'blackcurrant', 'watermelon', 'cherry']
+#with less
+thislist = ["apple", "banana", "cherry"]
+
+thislist[1:3] = ["watermelon"]
+
+print(thislist)
+#['apple', 'watermelon']
+#insert can be used to add an item in a specific area wthout replacing the value
+thislist = ["apple", "banana", "cherry"]
+
+thislist.insert(2, "watermelon")
+
+print(thislist) 
+#append can be used to add to the end of the list
+thislist = ["apple", "banana", "cherry"]
+
+thislist.append("orange")
+
+print(thislist)
+#.extnd will add 2 lists
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+
+thislist.extend(tropical)
+
+print(thislist)
+#to remove an index
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+#to pop an index the deleted index will be returned
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+#if you don't specify the index the last index will be removed
+#del is the same as remove but with different syntax
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+#del can also delete an entire list
+thislist = ["apple", "banana", "cherry"]
+del thislist
+#clear does not delete the list but deletes the indexes inside th list
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
 #
