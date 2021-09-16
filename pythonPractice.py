@@ -1,3 +1,67 @@
+# most python code requires correct indentation
+#correct
+if 5 > 2:
+    print("five is greater than two!")
+
+if 5 > 2:
+ print("five is greater than two!")
+if 5 > 2:
+            print("five is greater than two!")
+
+ #incorrect
+#if 5 > 2:
+#print("five is greater than two!")
+    #print("five is greater than two!") 
+
+#variables 
+x=5
+y = "hello"
+print(x) #i printed this version of x so it gives 5
+print(y)
+#can reasign values based on order
+x="no"
+print(x)# this version of x is different
+#will not be shown
+"frick"
+5
+#specifying data types
+x=str(3)#string "3"
+print(x)
+print(type(x))
+y=int(3)#number 3
+print(y)
+z=float(3)# decimal 3.0
+print(z)
+#if want to print datatype only
+x=5
+y="john"
+print(type(x))
+print(type(y))
+#can use double or single quotes
+# variable names are case sensitive
+#must start with letter or underscore
+#can only contain A-z 0-9 and _
+#good
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+#bad
+# 2myvar = "John"
+# my-var = "John"
+# my var = "John"
+#you can assign values to multiple variables in one line variables and values must be in order
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+#you can assign the same value to multiple variables on the same line
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
 #Using = sign in an if statement it will be improper syntax
 
 #There are 3 data types for numbers:
