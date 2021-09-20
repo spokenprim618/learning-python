@@ -593,4 +593,50 @@ del thislist
 thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)
+#to sort a list this eill sort all strings with letter a into the new array
+#x is used as a variable that can change as its iterated through the array
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+#list comprehension allows shorthand old list is unchanged
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+#if i want to make a new list without a specific element
+newlist = [x for x in fruits if x != "apple"]
+#range can be used to iterate through a number starting from 0 ending at 9. Ten is not included only works on lists tuples and sets
+newlist = [x for x in range(10)]
+
+print(newlist)
+#this allows numbers lower than 5 range can be anything and sign can be anything as well
+newlist = [x for x in range(10) if x < 5]
+#any types of manipulations and loops can be done in list
+newlist = [x.upper() for x in fruits]
+#I can overide values in a list the original fruit list will stay
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = ['hello' for x in fruits]
+
+print(newlist)
+#while the x is iterating and copying the fruits array once x=banana x will be replaced with orange
+newlist = [x if x != "banana" else "orange" for x in fruits]
+#.sort is used in a list to sort items aplabetically and numerically
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+thisList=[100,10,1,1000]
+thisList.sort()
+print(thisList)
+#setting sort reverse = true will reverse the alphabetical order or number order Z-A
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
 #
